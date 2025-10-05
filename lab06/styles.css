@@ -1,3 +1,10 @@
 body {font-family: 'Times New Roman', Times, serif;}
 h1, h2 {color: darkblue;}
-.evenrow {color:antiquewhite}
+/* table layout and zebra striping */
+table, th, td { border: 1px solid black; border-collapse: collapse; }
+caption { font-weight: bold; margin-bottom: 0.5rem; }
+/* zebra striping using an explicit class on rows */
+.evenrow { background-color: #f2f2f2; }
+
+/* spacing inside table cells */
+th, td { padding: 0.4rem 0.6rem; }
