@@ -6,3 +6,4 @@ caption { font-weight: bold; margin-bottom: 0.5rem; }
 th, td { padding: 0.4rem 0.6rem; }
 a {color: #66b2b2}
 nav {background-color: #f2f2f2;}
+nav a {color: #008080; text-decoration: none; font-weight: bold; margin: 0 1rem;}
