@@ -5,9 +5,13 @@
         <title>Unit 9 - Duke Layout</title>
         <style>
             body {font-family: "Open Sans",Roboto,"Helvetica Neue",Helvetica,sans-serif;}
+            .outer-container{display: flex;}
+            .row1, .row2 {display: flex}
+            .row1 div{padding: 1em;}
         </style>
     </head>
-    <body>
+    <body><div class="outer-container">
+        <div class="left">
         <h2>Up Next</h2>
 
         <p>Effective March 10, 2020, all Duke-sponsored events over 50 people have been cancelled, rescheduled, postponed or virtualized. Please check with the event sponsor regarding event status.</p>
@@ -33,18 +37,20 @@
             Away/Neutral Site Game, See Description
         </p>
         <div>More Events at Duke</div>
-
+</div>
+<div class="right">
         <h2>Resources</h2>
+        <div class="row1">
+        <div>Duke Student Assistance Fund<br>
+        <img src="https://duke.edu/assets/img/resized/student-assistance.jpg" alt="Duke Allen Building"></div>
 
-        Duke Student Assistance Fund<br>
-        <img src="https://duke.edu/assets/img/resized/student-assistance.jpg" alt="Duke Allen Building">
-
-        Duke Scholarship and Engagement on COVID-19<br>
-        <img src="https://duke.edu/assets/img/resized/scholarship.jpg" alt="Dr. Barton Haynes">
+        <div>Duke Scholarship and Engagement on COVID-19<br>
+        <img src="https://duke.edu/assets/img/resized/scholarship.jpg" alt="Dr. Barton Haynes"></div>
         
-        Anti-Racism at Duke<br>
-        <img src="https://duke.edu/assets/img/resized/anti-racism-tile.jpg" alt="close up of chappel">
-        
+        <div></div>Anti-Racism at Duke<br>
+        <img src="https://duke.edu/assets/img/resized/anti-racism-tile.jpg" alt="close up of chappel"></div>
+        </div>  
+        <div class="row2">  
         Keep Learning<br>
         <img src="https://duke.edu/assets/img/resized/keep-learning.jpg" alt="Lilly Library">
         
@@ -53,7 +59,9 @@
         
         Keep Working<br>
         <img src="https://duke.edu/assets/img/resized/keep-working.jpg" alt="Duke Chapel">
+        </div>
 
-
+    </div>
+</div>
     </body>
 </html>
