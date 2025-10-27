@@ -8,10 +8,26 @@
             body {font-family: Arial, Helvetica, sans-serif;}
             .row1 { 
                 padding: 80px;
-                margin-top: 40px;}
+                margin-top: 40px;
+                display: flex; 
+                flex-wrap: wrap;
+                }        
+                
             .row1 div {
                 padding: 40px;
             }
+            
+            
+            img {max-width: 100%;}
+            .bannersmall {display: none;}
+
+            @media only screen and (max-with:740px){
+                .banner {display: none;}
+                .bannersmall {display: block;}            }
+
+
+            
+            
         </style>
     </head>
     <body>
