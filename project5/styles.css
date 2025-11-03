@@ -1,0 +1,140 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #555;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    color: #34495e;
+    margin: 1.5rem 0 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.benefits {
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.benefits li {
+    margin-bottom: 0.5rem;
+}
+
+.band-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.band-image {
+    width: 100%;
+    max-height: 400px;
+    background-color: #eee;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.image-placeholder {
+    color: #666;
+    font-style: italic;
+}
+
+/* Songs page specific styles */
+.song-list {
+    list-style: none;
+}
+
+.song-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #2c3e50;
+}
+
+/* Inspirations page specific styles */
+.takeaways {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.takeaway-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    color: #666;
+    border-top: 1px solid #eee;
+}
