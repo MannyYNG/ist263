@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title> JavaScript Pt2 Week 12</title>
+
+        <script>
+            function bigly(){
+            document.getElementById("p1").innerHTML = "New Content"
+             } 
+             function wrongAnswer(){
+                document.getElementById("wrong").innerHTML = 
+                "<span style='color:red;'>True is the wrong answer!</span>"
+             }
+             function changeImage(){
+                document.getElementById("myimage").
+                setAttribute("src","../project/pimages/gojira2.png");
+             }
+             function bluey() {
+                document.getElementById("p2").style.color = "#0000FF"
+             }
+        </script>
+</head>
+<body>
+    <p id="p1" onclick="bigly();">Content goes here</p>
+    <p id="p2">Paragraph 2</p>
+
+    <h1 onmouseover="bluey();"> My JavaScript Quiz</h1>
+    <p>  Java and Javascript are the same thing.</p>
+    <p onclick="wrongAnswer();" id="wrong">True</p>
+    <p onclick="rightAnswer();" id="correct">False</p>
+
+    <img src="../images/personalimg.png" id="myimage" alt="personal image"
+    onclick="changeImage();">
+
+</body>
+</html>
