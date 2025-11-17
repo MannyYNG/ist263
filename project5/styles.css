@@ -1,4 +1,4 @@
-/* Base styles */
+/*Base*/
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Navigation */
+/*Nav*/
 nav {
     background-color: #333;
     padding: 1rem;
@@ -42,7 +42,7 @@ nav a.active {
     background-color: #555;
 }
 
-/* Main content */
+/*Main*/
 main {
     padding: 20px;
 }
@@ -104,7 +104,7 @@ h3 {
     font-style: italic;
 }
 
-/* Songs page specific styles */
+/*Songs page specific styles*/
 .song-list {
     list-style: none;
 }
@@ -116,7 +116,7 @@ h3 {
     border-left: 4px solid #2c3e50;
 }
 
-/* Inspirations page specific styles */
+/*Inspirations page specific styles*/
 .takeaways {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -130,7 +130,7 @@ h3 {
     border-radius: 8px;
 }
 
-/* Footer */
+/*Footer*/
 footer {
     text-align: center;
     margin-top: 3rem;
