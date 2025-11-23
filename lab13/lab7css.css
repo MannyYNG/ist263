@@ -18,12 +18,13 @@ nav {padding: 10px; margin-bottom: 30px; border: 1px solid #000000;}
   width: 1px;
   height: 1px;
   overflow: hidden;
-  color: #000000;
+  color: #FFFFFF;
 }
 .skip:focus {
   position: static;
   width: auto;
   height: auto;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
