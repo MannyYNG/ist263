@@ -12,10 +12,28 @@
             cursor: pointer;
             padding: 5px;
         }
-        /* write CSS to position our subscribe form and hide it when the page loads here */
-    </style>
+        
+
+    #modal {
+        position: absolute;
+        width: 300px;
+        top:200px;
+        left: 350px;
+        background-color: burlywood;
+        border: 1px black solid;
+        display: none;
+    }   
+#close{text-align: right;cursor: pointer;}
+
+ </style>
     <script>
         /* add code to open and close our subscribe form */
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
     </script>
 </head>
 <body>
@@ -30,9 +48,22 @@
         
         <p>Muffin pastry cupcake cheesecake icing lollipop. Jelly beans tootsie roll tootsie roll toffee gummi bears chocolate bar. Tart cake donut fruitcake oat cake sesame snaps jelly cookie icing. Jelly liquorice pudding biscuit cookie sweet roll tootsie roll dessert lollipop.</p>
 
-        <p><a class="button">Subscribe to Our Newsletter</a></p>
+        <p><a class="button" onclick="openModal();">Subscribe to Our Newsletter</a></p>
 
         <!-- make a subscribe form here -->
+         
+<div id="modal">
+    <p id="close" onclick="closeModal();">X</p>
+    <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit">
+    </form>
+
+</div>
+    
 
     </div>
 </body>
